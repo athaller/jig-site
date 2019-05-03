@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://jigsaw-blog-netlify-netlifycms-template.netlify.com',
+    'baseUrl' => 'https://inspiring-goldwasser-69a15a.netlify.com',
     'production' => true,
 ];
