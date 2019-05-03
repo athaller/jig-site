@@ -2,7 +2,6 @@
     <!-- Begin Quote-Of-The-Day Block -->
     <div id="qotd_block">
             <div id="quote">
-                <h2>Be Inspired!</h2>
             </div>
     </div>
     <!--End Quote-Of-The-Day Block -->
@@ -43,7 +42,8 @@ getJSON('https://quotes.rest/qod.json', function(data) {
     };
     document.getElementById("quote").innerHTML = "<h1>" + data.contents.quotes[0].title + "</h1><p>" + data.contents.quotes[0].quote + "</p>";
 }, function(status) {
-	console.log('Failed to fetch QOTD.');
+    console.log('Failed to fetch QOTD.');
+    document.getElementById("quote").innerHTML = "<h1>Be Inspired!</h1><p>Learn one thing today... It's never a bad day when you learn something new</p>";
 });
 
 }
